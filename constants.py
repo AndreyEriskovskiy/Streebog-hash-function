@@ -77,14 +77,3 @@ C_Constants = [
     '7bcd9ed0efc889fb3002c6cd635afe94d8fa6bbbebab076120018021148466798a1d71efea48b9caefbacd1d7d476e98dea2594ac06fd85d6bcaa4cd81f32d1b', 
     '378ee767f11631bad21380b00449b17acda43c32bcdf1d77f82012d430219f9b5d80ef9d1891cc86e71da4aa88e12852faf417d5d9b21b9948bc924af11bd720'
 ]
-
-'''
-
-for i in range(len(C_Constants)):
-    C_Constants[i] = ''.join(hex(C_Constants[i][j])[2:].zfill(2) for j in range(len(C_Constants[i]) - 1, -1, -1))
-
-
-print(C_Constants)
-
-'''
-
